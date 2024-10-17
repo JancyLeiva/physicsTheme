@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="header">
+        <div class="inner-header flex">
+            <section>
+            <h1>Mecánica de fluidos</h1>
+            <dialog>
+                <p class="dialog_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quae sequi blanditiis 
+                    odit, autem voluptatem error fuga perspiciatis esse accusamus quasi molestias neque 
+                    ratione quia quis, rerum nulla impedit delectus.<a href=""> Mas... </a></p>
+                <form method="dialog">
+                    <button class="close">Cerrar</button>
+                </form>
+            </dialog>
+            <button id="button_Stat" class="button">Estática</button>
+            <button id="button_Dynam" class="button">Dinámica</button>
+        </div>
+        
+    <!-- Contenedor Waves -->
+    <div>
+        <svg class="waves"
+        viewBox="0 24 150 28"
+        preserveAspectRatio="none"
+        shape-rendering="auto">
+        <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"/>
+        </defs>
+        <!-- Formando las ondas -->
+        <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7)"/>
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)"/>
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)"/>
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff"/>
+        </g>
+        </svg>
+    </div>
+    </div>
+    <!-- Footer text -->
+    <div class="content flex">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <script src="effect.js"></script>
+</body>
+</html>
